@@ -1,0 +1,28 @@
+.time-display {
+  font-size: 6em;
+  color: $base-color
+}
+
+.count-today {
+  font-size: 4em;
+  color: $base-color
+}
+
+.app-wrapper {
+  padding: 2em 0;
+}
+
+.timer-time, .count-today-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.interval-history-wrapper {
+  margin-top: 3em;
+  .section-title {
+    margin-bottom: 0.5em;
+  }
+}

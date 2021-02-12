@@ -1,0 +1,49 @@
+{
+  "name": "simple-pomodoro-lesson-starter",
+  "version": "1.0.0",
+  "description": "ポモドーロタイマーアプリスターターファイル",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/test/__mocks__/styleMock.js"
+    }
+  },
+  "author": "Atsuhiro Teshima",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^23.2.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "jest": "^23.2.0",
+    "jest-localstorage-mock": "^2.2.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "install-package": "^1.0.0",
+    "moment": "^2.22.2"
+  }
+}
