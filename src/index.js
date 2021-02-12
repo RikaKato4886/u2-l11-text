@@ -7,9 +7,9 @@ const DAY = 24 * 60 * MINUTE; // 1日のミリ秒数
 
 class App {
   constructor() {
-    this.workLength = 0.5; // 25分間
-    this.breakLength = 0.3; // 5分間
-    this.longBreakLength = 1; // 15分間
+    this.workLength = 25; // 25分間
+    this.breakLength = 5; // 5分間
+    this.longBreakLength = 15; // 15分間
     this.isTimerStopped = true; // 最初はタイマーは止まっている
     this.onWork = true; // 最初は作業からタイマーは始まる
 
@@ -111,9 +111,9 @@ class App {
   }
 
   resetValues() {
-    this.workLength = 0.5; // 25分間
-    this.breakLength = 0.3; // 5分間
-    this.longBreakLength = 1; // 15分間
+    this.workLength = 25; // 25分間
+    this.breakLength = 5; // 5分間
+    this.longBreakLength = 15; // 15分間
     this.startAt = null;
     this.endAt = null;
     this.isTimerStopped = true;
